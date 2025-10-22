@@ -8,6 +8,7 @@ import { projects } from "@/lib/projects-data"
 import { AutoPreview } from "@/components/auto-preview"
 import Link from "next/link"
 import { ArrowLeft, ExternalLink, Check } from "lucide-react"
+import { Button } from "@/components/ui/button"
 import { notFound } from "next/navigation"
 
 export default function ProjectDetailPage() {
