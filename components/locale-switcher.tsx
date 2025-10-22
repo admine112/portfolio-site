@@ -5,8 +5,9 @@ import { locales, localeNames } from "@/lib/i18n"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Globe } from "lucide-react"
+import { memo } from "react"
 
-export function LocaleSwitcher() {
+function LocaleSwitcherComponent() {
   const { locale, setLocale } = useLocale()
 
   return (
@@ -26,3 +27,5 @@ export function LocaleSwitcher() {
     </DropdownMenu>
   )
 }
+
+export const LocaleSwitcher = memo(LocaleSwitcherComponent)

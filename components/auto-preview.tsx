@@ -1,5 +1,7 @@
 "use client"
 
+import { memo } from "react"
+
 interface AutoPreviewProps {
   url: string
   fallbackImage: string
@@ -7,23 +9,18 @@ interface AutoPreviewProps {
   className?: string
 }
 
-// Функция для получения автоматического превью
-function getAutoPreview(url: string, fallback: string): string {
-  // Автоматические скриншоты отключены - используем статичные изображения
-  // Причина: S-Shot.ru и другие сервисы блокируют запросы
-  return fallback
-}
-
-export function AutoPreview({ url, fallbackImage, alt, className = "" }: AutoPreviewProps) {
-  // Просто используем статичное изображение
-  const previewUrl = fallbackImage
-
+function AutoPreviewComponent({ url, fallbackImage, alt, className = "" }: AutoPreviewProps) {
   return (
     <img
-      src={previewUrl}
+      src={fallbackImage}
       alt={alt}
       className={className}
       loading="lazy"
+      decoding="async"
+      width={800}
+      height={600}
     />
   )
 }
+
+export const AutoPreview = memo(AutoPreviewComponent)
