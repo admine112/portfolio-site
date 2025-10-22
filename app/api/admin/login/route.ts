@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import crypto from 'crypto'
 
 // Пароль из переменных окружения или дефолтный
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'linux123'
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin'
 
 export async function POST(request: NextRequest) {
   try {

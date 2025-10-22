@@ -1,14 +1,15 @@
 "use client"
 
-import { useState } from "react"
+import { useState, Suspense, lazy } from "react"
 import { useLocale } from "@/lib/locale-provider"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { projects } from "@/lib/projects-data"
-import { AutoPreview } from "@/components/auto-preview"
 import Link from "next/link"
 import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
+
+const AutoPreview = lazy(() => import("@/components/auto-preview").then(mod => ({ default: mod.AutoPreview })))
 
 export default function ProjectsPage() {
   const { locale } = useLocale()
@@ -85,12 +86,14 @@ export default function ProjectsPage() {
               >
                 {/* Project Image - автоматическое превью */}
                 <Link href={`/projects/${project.id}`} className="relative aspect-video overflow-hidden bg-muted">
-                  <AutoPreview
-                    url={project.url}
-                    fallbackImage={project.image || "/placeholder.svg"}
-                    alt={project.title[locale]}
-                    className="h-full w-full object-cover transition-transform group-hover:scale-105"
-                  />
+                  <Suspense fallback={<div className="h-full w-full bg-muted animate-pulse" />}>
+                    <AutoPreview
+                      url={project.url}
+                      fallbackImage={project.image || "/placeholder.svg"}
+                      alt={project.title[locale]}
+                      className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                    />
+                  </Suspense>
                   <div className="absolute inset-0 bg-black/0 transition-colors group-hover:bg-black/10" />
                 </Link>
 
