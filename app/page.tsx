@@ -17,28 +17,46 @@ export default function HomePage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-20 md:py-32">
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="mb-6 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-              {t.hero.greeting}
-            </div>
+        <section className="relative min-h-screen overflow-hidden py-20 md:py-32">
+          {/* Background Image with Overlay */}
+          <div 
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage: 'url(/code-background.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            {/* Dark gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/80"></div>
+            {/* Additional radial gradient for depth */}
+            <div className="absolute inset-0 bg-radial-gradient from-transparent via-black/40 to-black/60"></div>
+          </div>
 
-            <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight md:text-6xl">{t.hero.name}</h1>
+          {/* Content */}
+          <div className="container relative z-10 mx-auto px-4">
+            <div className="mx-auto max-w-3xl text-center">
+              <div className="mb-6 inline-block rounded-full bg-primary/20 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm">
+                {t.hero.greeting}
+              </div>
 
-            <p className="mb-4 text-2xl font-semibold text-muted-foreground md:text-3xl">{t.hero.title}</p>
+              <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-white md:text-6xl">{t.hero.name}</h1>
 
-            <p className="mb-8 text-pretty text-lg text-muted-foreground md:text-xl">{t.hero.description}</p>
+              <p className="mb-4 text-2xl font-semibold text-gray-200 md:text-3xl">{t.hero.title}</p>
 
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button asChild size="lg" className="w-full sm:w-auto">
-                <Link href="/projects">
-                  {t.hero.cta}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto bg-transparent">
-                <Link href="/contact">{t.hero.contact}</Link>
-              </Button>
+              <p className="mb-8 text-pretty text-lg text-gray-300 md:text-xl">{t.hero.description}</p>
+
+              <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <Button asChild size="lg" className="w-full sm:w-auto">
+                  <Link href="/projects">
+                    {t.hero.cta}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="w-full sm:w-auto bg-white/10 text-white hover:bg-white/20 border-white/30">
+                  <Link href="/contact">{t.hero.contact}</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </section>

@@ -133,3 +133,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-foreground);
 }
+
+.bg-radial-gradient {
+  background: radial-gradient(ellipse at center, var(--tw-gradient-stops));
+}
