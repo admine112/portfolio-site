@@ -36,7 +36,7 @@ export default function AboutPage() {
     {
       category: { en: "Integrations", uk: "Інтеграції", de: "Integrationen" },
       icon: Zap,
-      items: ["Telegram API", "Payment Systems", "Forms", "Analytics"],
+      items: ["Telegram API", "Forms", "Analytics"],
     },
     {
       category: { en: "Languages", uk: "Мови", de: "Sprachen" },
