@@ -19,11 +19,6 @@ export const metadata: Metadata = {
   title: "Artem Fistonkov - Full-Stack Developer",
   description: "Portfolio of Artem Fistonkov, Full-Stack Developer specializing in modern web applications",
   generator: 'v0.app',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
   robots: 'index, follow',
   openGraph: {
     type: 'website',
@@ -32,6 +27,12 @@ export const metadata: Metadata = {
     title: 'Artem Fistonkov - Full-Stack Developer',
     description: 'Portfolio of Artem Fistonkov, Full-Stack Developer',
   },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 }
 
 export default function RootLayout({
