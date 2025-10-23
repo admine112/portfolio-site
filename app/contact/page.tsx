@@ -211,9 +211,9 @@ export default function ContactPage() {
 
                 <div>
                   <Label htmlFor="message">
-                    {locale === "en" && "Message"}
-                    {locale === "uk" && "Повідомлення"}
-                    {locale === "de" && "Nachricht"}
+                    {locale === "en" && "Your Preferences"}
+                    {locale === "uk" && "Ваші вподобання"}
+                    {locale === "de" && "Ihre Präferenzen"}
                   </Label>
                   <Textarea
                     id="message"
