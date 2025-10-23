@@ -80,59 +80,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Features Section */}
-        <section className="container mx-auto px-4 py-20">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                <Code2 className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">
-                {locale === "en" && "Modern Technologies"}
-                {locale === "uk" && "Сучасні технології"}
-                {locale === "de" && "Moderne Technologien"}
-              </h3>
-              <p className="text-muted-foreground">
-                {locale === "en" && "React, Next.js, TypeScript, Tailwind CSS"}
-                {locale === "uk" && "React, Next.js, TypeScript, Tailwind CSS"}
-                {locale === "de" && "React, Next.js, TypeScript, Tailwind CSS"}
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                <Palette className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">
-                {locale === "en" && "Responsive Design"}
-                {locale === "uk" && "Адаптивний дизайн"}
-                {locale === "de" && "Responsives Design"}
-              </h3>
-              <p className="text-muted-foreground">
-                {locale === "en" && "Mobile-first approach for all devices"}
-                {locale === "uk" && "Mobile-first підхід для всіх пристроїв"}
-                {locale === "de" && "Mobile-First-Ansatz für alle Geräte"}
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                <Zap className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">
-                {locale === "en" && "Fast Delivery"}
-                {locale === "uk" && "Швидка доставка"}
-                {locale === "de" && "Schnelle Lieferung"}
-              </h3>
-              <p className="text-muted-foreground">
-                {locale === "en" && "Quick turnaround with efficient development"}
-                {locale === "uk" && "Швидка розробка з ефективним підходом"}
-                {locale === "de" && "Schnelle Entwicklung mit effizienter Arbeitsweise"}
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Featured Projects Preview */}
         <section className="border-t border-border bg-muted/50 py-20">
           <div className="container mx-auto px-4">
@@ -190,6 +137,59 @@ export default function HomePage() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Section */}
+        <section className="container mx-auto px-4 py-20">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                <Code2 className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="mb-2 text-xl font-semibold">
+                {locale === "en" && "Modern Technologies"}
+                {locale === "uk" && "Сучасні технології"}
+                {locale === "de" && "Moderne Technologien"}
+              </h3>
+              <p className="text-muted-foreground">
+                {locale === "en" && "React, Next.js, TypeScript, Tailwind CSS"}
+                {locale === "uk" && "React, Next.js, TypeScript, Tailwind CSS"}
+                {locale === "de" && "React, Next.js, TypeScript, Tailwind CSS"}
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                <Palette className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="mb-2 text-xl font-semibold">
+                {locale === "en" && "Responsive Design"}
+                {locale === "uk" && "Адаптивний дизайн"}
+                {locale === "de" && "Responsives Design"}
+              </h3>
+              <p className="text-muted-foreground">
+                {locale === "en" && "Mobile-first approach for all devices"}
+                {locale === "uk" && "Mobile-first підхід для всіх пристроїв"}
+                {locale === "de" && "Mobile-First-Ansatz für alle Geräte"}
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                <Zap className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="mb-2 text-xl font-semibold">
+                {locale === "en" && "Fast Delivery"}
+                {locale === "uk" && "Швидка доставка"}
+                {locale === "de" && "Schnelle Lieferung"}
+              </h3>
+              <p className="text-muted-foreground">
+                {locale === "en" && "Quick turnaround with efficient development"}
+                {locale === "uk" && "Швидка розробка з ефективним підходом"}
+                {locale === "de" && "Schnelle Entwicklung mit effizienter Arbeitsweise"}
+              </p>
             </div>
           </div>
         </section>
