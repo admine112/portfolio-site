@@ -6,10 +6,10 @@ import { useLocale } from "@/lib/locale-provider"
 import { ThemeToggle } from "./theme-toggle"
 import { LocaleSwitcher } from "./locale-switcher"
 import { Menu, X } from "lucide-react"
-import { useState, memo } from "react"
+import { useState } from "react"
 import { Button } from "./ui/button"
 
-function NavigationComponent() {
+export function Navigation() {
   const pathname = usePathname()
   const { t } = useLocale()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -85,5 +85,3 @@ function NavigationComponent() {
     </nav>
   )
 }
-
-export const Navigation = memo(NavigationComponent)

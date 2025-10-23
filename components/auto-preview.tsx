@@ -1,7 +1,5 @@
 "use client"
 
-import { memo } from "react"
-
 interface AutoPreviewProps {
   url: string
   fallbackImage: string
@@ -9,7 +7,7 @@ interface AutoPreviewProps {
   className?: string
 }
 
-function AutoPreviewComponent({ url, fallbackImage, alt, className = "" }: AutoPreviewProps) {
+export function AutoPreview({ url, fallbackImage, alt, className = "" }: AutoPreviewProps) {
   return (
     <img
       src={fallbackImage}
@@ -22,5 +20,3 @@ function AutoPreviewComponent({ url, fallbackImage, alt, className = "" }: AutoP
     />
   )
 }
-
-export const AutoPreview = memo(AutoPreviewComponent)

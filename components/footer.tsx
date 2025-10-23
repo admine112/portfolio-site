@@ -3,9 +3,7 @@
 import { useLocale } from "@/lib/locale-provider"
 import { Github, Mail } from "lucide-react"
 import Link from "next/link"
-import { memo } from "react"
-
-function FooterComponent() {
+export function Footer() {
   const { t } = useLocale()
   const currentYear = new Date().getFullYear()
 
@@ -40,5 +38,3 @@ function FooterComponent() {
     </footer>
   )
 }
-
-export const Footer = memo(FooterComponent)
