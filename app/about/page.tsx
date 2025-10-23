@@ -39,16 +39,6 @@ export default function AboutPage() {
       icon: Zap,
       items: ["Telegram API", "Forms", "Analytics"],
     },
-    {
-      category: { en: "Languages", uk: "Мови", de: "Sprachen" },
-      icon: Globe,
-      items: [
-        locale === "en" ? "English" : locale === "uk" ? "Англійська" : "Englisch",
-        locale === "en" ? "Ukrainian" : locale === "uk" ? "Українська" : "Ukrainisch",
-        locale === "en" ? "German" : locale === "uk" ? "Німецька" : "Deutsch",
-        locale === "en" ? "Russian" : locale === "uk" ? "Російська" : "Russisch",
-      ],
-    },
   ]
 
   return (
