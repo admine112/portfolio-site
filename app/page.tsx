@@ -17,46 +17,43 @@ export default function HomePage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-screen overflow-hidden py-20 md:py-32" suppressHydrationWarning>
-          {/* Background Image with Overlay */}
-          <div 
-            className="absolute inset-0 z-0"
-            style={{
-              backgroundImage: 'url(/code-background.jpg)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-            suppressHydrationWarning
-          >
-            {/* Dark gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/80"></div>
-            {/* Additional radial gradient for depth */}
-            <div className="absolute inset-0 bg-radial-gradient from-transparent via-black/40 to-black/60"></div>
-          </div>
-
-          {/* Content */}
-          <div className="container relative z-10 mx-auto px-4">
-            <div className="mx-auto max-w-3xl text-center">
-              <div className="mb-6 inline-block rounded-full bg-primary/20 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm">
-                {t.hero.greeting}
+        <section className="relative py-20 md:py-32" suppressHydrationWarning>
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 gap-12 items-center md:grid-cols-2">
+              {/* Left side - Image */}
+              <div className="relative h-96 md:h-full md:min-h-96 overflow-hidden rounded-lg" suppressHydrationWarning>
+                <img 
+                  src="/code-background.jpg" 
+                  alt="Code background"
+                  className="w-full h-full object-cover rounded-lg shadow-2xl"
+                />
+                {/* Overlay for image */}
+                <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent rounded-lg"></div>
               </div>
 
-              <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-white md:text-6xl">{t.hero.name}</h1>
+              {/* Right side - Content */}
+              <div className="text-center md:text-left">
+                <div className="mb-6 inline-block rounded-full bg-primary/20 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm">
+                  {t.hero.greeting}
+                </div>
 
-              <p className="mb-4 text-2xl font-semibold text-gray-200 md:text-3xl">{t.hero.title}</p>
+                <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight md:text-5xl">{t.hero.name}</h1>
 
-              <p className="mb-8 text-pretty text-lg text-gray-300 md:text-xl">{t.hero.description}</p>
+                <p className="mb-4 text-2xl font-semibold text-muted-foreground md:text-3xl">{t.hero.title}</p>
 
-              <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <Button asChild size="lg" className="w-full sm:w-auto">
-                  <Link href="/projects">
-                    {t.hero.cta}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="w-full sm:w-auto bg-white/10 text-white hover:bg-white/20 border-white/30">
-                  <Link href="/contact">{t.hero.contact}</Link>
-                </Button>
+                <p className="mb-8 text-pretty text-lg text-muted-foreground md:text-xl">{t.hero.description}</p>
+
+                <div className="flex flex-col items-center justify-center gap-4 md:justify-start md:flex-row">
+                  <Button asChild size="lg" className="w-full sm:w-auto">
+                    <Link href="/projects">
+                      {t.hero.cta}
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
+                    <Link href="/contact">{t.hero.contact}</Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
