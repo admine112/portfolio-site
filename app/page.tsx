@@ -16,9 +16,9 @@ export default function HomePage() {
       <Navigation />
 
       <main className="flex-1">
-        {/* Hero Section */}
+        {/* Combined Hero + Stats Section */}
         <section 
-          className="relative container mx-auto px-4 py-20 md:py-32 overflow-hidden rounded-lg"
+          className="relative min-h-screen flex items-center overflow-hidden"
           style={{
             backgroundImage: 'url(/code-background.jpg)',
             backgroundSize: 'cover',
@@ -32,48 +32,49 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-radial-gradient from-transparent via-black/40 to-black/60"></div>
 
           {/* Content */}
-          <div className="relative z-10">
-            <div className="mx-auto max-w-3xl text-center">
-              <div className="mb-6 inline-block rounded-full bg-primary/20 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm">
-                {t.hero.greeting}
+          <div className="relative z-10 w-full">
+            <div className="container mx-auto px-4">
+              {/* Main Hero Content */}
+              <div className="mb-16 md:mb-20">
+                <div className="mx-auto max-w-3xl text-center">
+                  <div className="mb-6 inline-block rounded-full bg-primary/20 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm">
+                    {t.hero.greeting}
+                  </div>
+
+                  <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-white md:text-6xl">{t.hero.name}</h1>
+
+                  <p className="mb-4 text-2xl font-semibold text-gray-200 md:text-3xl">{t.hero.title}</p>
+
+                  <p className="mb-8 text-pretty text-lg text-gray-300 md:text-xl">{t.hero.description}</p>
+
+                  <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                    <Button asChild size="lg" className="w-full sm:w-auto">
+                      <Link href="/projects">
+                        {t.hero.cta}
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                    <Button asChild variant="outline" size="lg" className="w-full sm:w-auto bg-white/10 text-white hover:bg-white/20 border-white/30">
+                      <Link href="/contact">{t.hero.contact}</Link>
+                    </Button>
+                  </div>
+                </div>
               </div>
 
-              <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-white md:text-6xl">{t.hero.name}</h1>
-
-              <p className="mb-4 text-2xl font-semibold text-gray-200 md:text-3xl">{t.hero.title}</p>
-
-              <p className="mb-8 text-pretty text-lg text-gray-300 md:text-xl">{t.hero.description}</p>
-
-              <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <Button asChild size="lg" className="w-full sm:w-auto">
-                  <Link href="/projects">
-                    {t.hero.cta}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="w-full sm:w-auto bg-white/10 text-white hover:bg-white/20 border-white/30">
-                  <Link href="/contact">{t.hero.contact}</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stats Section */}
-        <section className="border-y border-border bg-muted/50 py-12">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-              <div className="text-center">
-                <div className="mb-2 text-4xl font-bold">{projects.length}+</div>
-                <div className="text-sm text-muted-foreground">{t.stats.projects}</div>
-              </div>
-              <div className="text-center">
-                <div className="mb-2 text-4xl font-bold">2+</div>
-                <div className="text-sm text-muted-foreground">{t.stats.experience}</div>
-              </div>
-              <div className="text-center">
-                <div className="mb-2 text-4xl font-bold">15+</div>
-                <div className="text-sm text-muted-foreground">{t.stats.technologies}</div>
+              {/* Stats Grid - Bottom of Hero */}
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+                <div className="text-center backdrop-blur-sm bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="mb-2 text-4xl font-bold text-white">{projects.length}+</div>
+                  <div className="text-sm text-gray-300">{t.stats.projects}</div>
+                </div>
+                <div className="text-center backdrop-blur-sm bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="mb-2 text-4xl font-bold text-white">2+</div>
+                  <div className="text-sm text-gray-300">{t.stats.experience}</div>
+                </div>
+                <div className="text-center backdrop-blur-sm bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="mb-2 text-4xl font-bold text-white">15+</div>
+                  <div className="text-sm text-gray-300">{t.stats.technologies}</div>
+                </div>
               </div>
             </div>
           </div>
