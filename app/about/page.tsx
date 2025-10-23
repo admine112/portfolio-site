@@ -7,6 +7,7 @@ import { Code2, Database, Palette, Zap, Globe, Smartphone } from "lucide-react"
 
 export default function AboutPage() {
   const { locale } = useLocale()
+  const currentYear = new Date().getFullYear()
 
   const skills = [
     {
@@ -144,9 +145,9 @@ export default function AboutPage() {
             <div className="space-y-8">
               <div className="border-l-2 border-primary pl-6">
                 <div className="mb-2 text-sm text-muted-foreground">
-                  {locale === "en" && "2022 - Present"}
-                  {locale === "uk" && "2022 - Сьогодні"}
-                  {locale === "de" && "2022 - Heute"}
+                  {locale === "en" && `2022 - Present (${currentYear})`}
+                  {locale === "uk" && `2022 - Сьогодні (${currentYear})`}
+                  {locale === "de" && `2022 - Heute (${currentYear})`}
                 </div>
                 <h3 className="mb-2 text-xl font-semibold">
                   {locale === "en" && "Freelance Full-Stack Developer"}
