@@ -138,7 +138,7 @@ export default function PricingPage() {
       price: "+$200-400",
     },
     {
-      name: { en: "Telegram Integration", uk: "Інтеграція з Telegram", de: "Telegram-Integration" },
+      name: { en: "Telegram Bot for Requests", uk: "Telegram Bot для прийому заявок", de: "Telegram-Bot für Anfragen" },
       price: "+$50-100",
     },
     {

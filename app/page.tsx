@@ -108,9 +108,9 @@ export default function HomePage() {
                 {locale === "de" && "Schnelle Lieferung"}
               </h3>
               <p className="text-muted-foreground">
-                {locale === "en" && "Quick turnaround with AI-assisted development"}
-                {locale === "uk" && "Швидка розробка з допомогою AI"}
-                {locale === "de" && "Schnelle Entwicklung mit KI-Unterstützung"}
+                {locale === "en" && "Quick turnaround with efficient development"}
+                {locale === "uk" && "Швидка розробка з ефективним підходом"}
+                {locale === "de" && "Schnelle Entwicklung mit effizienter Arbeitsweise"}
               </p>
             </div>
           </div>

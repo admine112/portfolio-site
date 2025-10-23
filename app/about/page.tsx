@@ -85,11 +85,11 @@ export default function AboutPage() {
               </p>
               <p className="text-lg leading-relaxed">
                 {locale === "en" &&
-                  "My approach combines clean code, modern design principles, and efficient development workflows. I leverage AI-assisted development to deliver high-quality projects faster without compromising on quality. Whether it's a simple landing page or a complex web application, I'm committed to delivering solutions that exceed expectations."}
+                  "My approach combines clean code, modern design principles, and efficient development workflows. I focus on delivering high-quality projects with attention to detail and performance optimization. Whether it's a simple landing page or a complex web application, I'm committed to delivering solutions that exceed expectations."}
                 {locale === "uk" &&
-                  "Мій підхід поєднує чистий код, сучасні принципи дизайну та ефективні робочі процеси розробки. Я використовую AI-асистовану розробку для швидшої доставки високоякісних проєктів без компромісів щодо якості. Чи то простий лендінг, чи складний веб-додаток - я прагну створювати рішення, які перевершують очікування."}
+                  "Мій підхід поєднує чистий код, сучасні принципи дизайну та ефективні робочі процеси розробки. Я зосереджуюсь на доставці високоякісних проєктів з увагою до деталей та оптимізації продуктивності. Чи то простий лендінг, чи складний веб-додаток - я прагну створювати рішення, які перевершують очікування."}
                 {locale === "de" &&
-                  "Mein Ansatz kombiniert sauberen Code, moderne Designprinzipien und effiziente Entwicklungsworkflows. Ich nutze KI-gestützte Entwicklung, um qualitativ hochwertige Projekte schneller zu liefern, ohne Kompromisse bei der Qualität einzugehen. Ob einfache Landing-Page oder komplexe Webanwendung - ich bin bestrebt, Lösungen zu liefern, die Erwartungen übertreffen."}
+                  "Mein Ansatz kombiniert sauberen Code, moderne Designprinzipien und effiziente Entwicklungsworkflows. Ich konzentriere mich auf die Bereitstellung hochwertiger Projekte mit Aufmerksamkeit für Details und Leistungsoptimierung. Ob einfache Landing-Page oder komplexe Webanwendung - ich bin bestrebt, Lösungen zu liefern, die Erwartungen übertreffen."}
               </p>
             </div>
           </div>
