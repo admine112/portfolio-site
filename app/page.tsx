@@ -17,7 +17,7 @@ export default function HomePage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-screen overflow-hidden py-20 md:py-32">
+        <section className="relative min-h-screen overflow-hidden py-20 md:py-32" suppressHydrationWarning>
           {/* Background Image with Overlay */}
           <div 
             className="absolute inset-0 z-0"
@@ -26,6 +26,7 @@ export default function HomePage() {
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
+            suppressHydrationWarning
           >
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/80"></div>
