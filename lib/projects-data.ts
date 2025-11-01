@@ -516,4 +516,48 @@ export const projects: Project[] = [
     url: "https://modern-website-xmtj.bolt.host/",
     image: "/tire-service-preview.jpg",
   },
+  {
+  id: "gfdd",
+  title: {
+    en: "sd",
+    uk: "sd",
+    de: "sd"
+  },
+  description: {
+    en: "Project description",
+    uk: "Опис проєкту",
+    de: "Projektbeschreibung"
+  },
+  type: {
+    en: "Landing Page",
+    uk: "Лендінг",
+    de: "Landing-Page"
+  },
+  technologies: [
+    "React",
+    "Next.js"
+  ],
+  features: {
+    en: [
+      "Feature 1",
+      "Feature 2"
+    ],
+    uk: [
+      "Функція 1",
+      "Функція 2"
+    ],
+    de: [
+      "Funktion 1",
+      "Funktion 2"
+    ]
+  },
+  price: "$100-150",
+  duration: {
+    en: "1-2 days",
+    uk: "1-2 дні",
+    de: "1-2 Tage"
+  },
+  url: "https://crunch-site.vercel.app/schedule",
+  image: "v.jpg"
+}
 ]
