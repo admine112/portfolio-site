@@ -13,7 +13,7 @@ export default function PricingPage() {
   const packages = [
     {
       name: { en: "Landing Page", uk: "Лендінг", de: "Landing-Page" },
-      price: "$100-200",
+      price: "$40-90",
       description: {
         en: "Perfect for small businesses and personal projects",
         uk: "Ідеально для малого бізнесу та особистих проєктів",
@@ -25,7 +25,7 @@ export default function PricingPage() {
           "Responsive layout",
           "Contact form",
           "Basic SEO",
-          "1-3 days delivery",
+          "1-3 days development",
           "2 revisions included",
         ],
         uk: [
@@ -33,7 +33,7 @@ export default function PricingPage() {
           "Адаптивна верстка",
           "Форма зв'язку",
           "Базове SEO",
-          "Доставка 1-3 дні",
+          "Срок розробки 1-3 дні",
           "2 правки включено",
         ],
         de: [
@@ -41,14 +41,14 @@ export default function PricingPage() {
           "Responsives Layout",
           "Kontaktformular",
           "Basis-SEO",
-          "1-3 Tage Lieferung",
+          "1-3 Tage Entwicklung",
           "2 Überarbeitungen inklusive",
         ],
       },
     },
     {
       name: { en: "Multi-Page Website", uk: "Багатосторінковий сайт", de: "Mehrseitige Website" },
-      price: "$300-500",
+      price: "$60-100",
       description: {
         en: "Ideal for businesses needing multiple pages",
         uk: "Ідеально для бізнесу, що потребує кілька сторінок",
@@ -60,7 +60,7 @@ export default function PricingPage() {
           "Responsive design",
           "Contact forms",
           "Advanced SEO",
-          "2-4 days delivery",
+          "2-4 days development",
           "3 revisions included",
           "Basic integrations",
         ],
@@ -69,7 +69,7 @@ export default function PricingPage() {
           "Адаптивний дизайн",
           "Форми зв'язку",
           "Просунуте SEO",
-          "Доставка 2-4 дні",
+          "Срок розробки 2-4 дні",
           "3 правки включено",
           "Базові інтеграції",
         ],
@@ -78,7 +78,7 @@ export default function PricingPage() {
           "Responsives Design",
           "Kontaktformulare",
           "Erweitertes SEO",
-          "2-4 Tage Lieferung",
+          "2-4 Tage Entwicklung",
           "3 Überarbeitungen inklusive",
           "Basis-Integrationen",
         ],
@@ -87,7 +87,7 @@ export default function PricingPage() {
     },
     {
       name: { en: "Web Application", uk: "Веб-додаток", de: "Webanwendung" },
-      price: "$400-800",
+      price: "$80-200",
       description: {
         en: "Complex applications with custom functionality",
         uk: "Складні додатки з кастомним функціоналом",
@@ -99,30 +99,30 @@ export default function PricingPage() {
           "Database integration",
           "User authentication",
           "Admin panel",
-          "3-7 days delivery",
+          "3-7 days development",
           "5 revisions included",
           "Advanced integrations",
-          "API development",
+          "Integration with various APIs",
         ],
         uk: [
           "Кастомні функції",
           "Інтеграція з БД",
           "Аутентифікація",
           "Адмін-панель",
-          "Доставка 3-7 днів",
+          "Срок розробки 3-7 днів",
           "5 правок включено",
           "Просунуті інтеграції",
-          "Розробка API",
+          "Інтеграція з різними API",
         ],
         de: [
           "Individuelle Funktionen",
           "Datenbankintegration",
           "Benutzerauthentifizierung",
           "Admin-Panel",
-          "3-7 Tage Lieferung",
+          "3-7 Tage Entwicklung",
           "5 Überarbeitungen inklusive",
           "Erweiterte Integrationen",
-          "API-Entwicklung",
+          "Integration mit verschiedenen APIs",
         ],
       },
     },
@@ -131,27 +131,27 @@ export default function PricingPage() {
   const additionalFeatures = [
     {
       name: { en: "Multilingual Support", uk: "Багатомовність", de: "Mehrsprachige Unterstützung" },
-      price: "+$50-100",
+      price: "+$10-20",
     },
     {
       name: { en: "E-commerce Functionality", uk: "Функціонал інтернет-магазину", de: "E-Commerce-Funktionalität" },
-      price: "+$200-400",
+      price: "+$25-50",
     },
     {
       name: { en: "Telegram Bot for Requests", uk: "Telegram Bot для прийому заявок", de: "Telegram-Bot für Anfragen" },
-      price: "+$50-100",
+      price: "+$10-20",
     },
     {
       name: { en: "Payment Gateway", uk: "Платіжний шлюз", de: "Zahlungsgateway" },
-      price: "+$100-200",
+      price: "+$20-40",
     },
     {
       name: { en: "Custom Animations", uk: "Кастомні анімації", de: "Individuelle Animationen" },
-      price: "+$50-150",
+      price: "+$10-30",
     },
     {
       name: { en: "Advanced SEO", uk: "Просунуте SEO", de: "Erweitertes SEO" },
-      price: "+$100-200",
+      price: "+$20-40",
     },
   ]
 

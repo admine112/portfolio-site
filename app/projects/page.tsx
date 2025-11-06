@@ -31,7 +31,8 @@ export default function ProjectsPage() {
       return (
         project.type[locale].includes("Web App") ||
         project.type[locale].includes("додаток") ||
-        project.type[locale].includes("Webanwendung")
+        project.type[locale].includes("Webanwendung") ||
+        project.type[locale].includes("Application")
       )
     return true
   })
