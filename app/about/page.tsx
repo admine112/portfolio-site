@@ -68,11 +68,11 @@ export default function AboutPage() {
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-lg leading-relaxed">
                 {locale === "en" &&
-                  "Hi! I'm Artem Fistonkov, a Full-Stack Developer with over 2 years of experience building modern, responsive websites and web applications. I specialize in creating user-friendly interfaces and robust backend solutions using the latest technologies."}
+                  "Hi! I'm Artem Fistonkov, a Full-Stack Developer building modern, responsive websites and web applications. I specialize in creating user-friendly interfaces and robust backend solutions using the latest technologies."}
                 {locale === "uk" &&
-                  "Привіт! Я Артем Фістонков, Full-Stack розробник з понад 2-річним досвідом створення сучасних, адаптивних веб-сайтів та веб-додатків. Я спеціалізуюсь на створенні зручних інтерфейсів та надійних backend-рішень, використовуючи найновіші технології."}
+                  "Привіт! Я Артем Фістонков, Full-Stack розробник, який створює сучасні, адаптивні веб-сайти та веб-додатки. Я спеціалізуюсь на створенні зручних інтерфейсів та надійних backend-рішень, використовуючи найновіші технології."}
                 {locale === "de" &&
-                  "Hallo! Ich bin Artem Fistonkov, ein Full-Stack-Entwickler mit über 2 Jahren Erfahrung in der Entwicklung moderner, responsiver Websites und Webanwendungen. Ich spezialisiere mich auf die Erstellung benutzerfreundlicher Oberflächen und robuster Backend-Lösungen mit den neuesten Technologien."}
+                  "Hallo! Ich bin Artem Fistonkov, ein Full-Stack-Entwickler, der moderne, responsive Websites und Webanwendungen erstellt. Ich spezialisiere mich auf die Entwicklung benutzerfreundlicher Schnittstellen und robuster Backend-Lösungen mit den neuesten Technologien."}
               </p>
               <p className="text-lg leading-relaxed">
                 {locale === "en" &&
@@ -134,11 +134,6 @@ export default function AboutPage() {
 
             <div className="space-y-8">
               <div className="border-l-2 border-primary pl-6">
-                <div className="mb-2 text-sm text-muted-foreground">
-                  {locale === "en" && `2022 - Present (${currentYear})`}
-                  {locale === "uk" && `2022 - Сьогодні (${currentYear})`}
-                  {locale === "de" && `2022 - Heute (${currentYear})`}
-                </div>
                 <h3 className="mb-2 text-xl font-semibold">
                   {locale === "en" && "Freelance Full-Stack Developer"}
                   {locale === "uk" && "Фріланс Full-Stack розробник"}
