@@ -71,9 +71,9 @@ export const projects: Project[] = [
   {
     id: "flower-shop",
     title: {
-      en: "Flower Shop 'Eden Garden'",
-      uk: "Квітковий магазин 'Едемський Сад'",
-      de: "Blumenladen 'Eden Garden'",
+      en: "Flower Shop Eden Garden",
+      uk: "Квітковий магазин Едемський Сад",
+      de: "Blumenladen Eden Garden",
     },
     description: {
       en: "E-commerce flower shop with catalog, cart, and order system",
@@ -103,9 +103,9 @@ export const projects: Project[] = [
   {
     id: "yoga-studio",
     title: {
-      en: "Yoga Studio 'Aruna Flow'",
-      uk: "Студія йоги 'Aruna Flow'",
-      de: "Yoga-Studio 'Aruna Flow'",
+      en: "Yoga Studio Aruna Flow",
+      uk: "Студія йоги Aruna Flow",
+      de: "Yoga-Studio Aruna Flow",
     },
     description: {
       en: "Multi-page yoga studio website with booking system and Telegram integration",
@@ -327,9 +327,9 @@ export const projects: Project[] = [
   {
     id: "crunch-site",
     title: {
-      en: "Church Website 'Light of Hope'",
-      uk: "Сайт церкви 'Світло надії'",
-      de: "Kirchenwebsite 'Licht der Hoffnung'",
+      en: "Church Website Light of Hope",
+      uk: "Сайт церкви Світло надії",
+      de: "Kirchenwebsite Licht der Hoffnung",
     },
     description: {
       en: "Modern church website with 3 languages, gallery, service calendar, and Telegram integration",
@@ -391,9 +391,9 @@ export const projects: Project[] = [
   {
     id: "pizzeria",
     title: {
-      en: "Pizzeria 'Slice of Heaven'",
-      uk: "Піцерія 'Slice of Heaven'",
-      de: "Pizzeria 'Slice of Heaven'",
+      en: "Pizzeria Slice of Heaven",
+      uk: "Піцерія Slice of Heaven",
+      de: "Pizzeria Slice of Heaven",
     },
     description: {
       en: "Online pizza ordering website with pizza constructor and delivery",
@@ -417,7 +417,7 @@ export const projects: Project[] = [
       uk: "2-3 тижні",
       de: "2-3 Wochen",
     },
-    url: "https://slice-of-heaven-iota.vercel.app/",
+    url: "https://slice-of-heaven-rose.vercel.app/",
     image: "/pizzeria-preview.jpg",
   },
 ]
