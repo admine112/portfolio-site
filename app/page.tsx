@@ -48,7 +48,7 @@ export default function HomePage() {
                   <p className="mb-8 text-pretty text-lg text-gray-300 md:text-xl">{t.hero.description}</p>
 
                   <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-                    <Button asChild size="lg" className="w-full sm:w-auto">
+                    <Button asChild size="lg" className="w-full sm:w-auto bg-white text-black hover:bg-gray-200">
                       <Link href="/projects">
                         {t.hero.cta}
                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -62,14 +62,10 @@ export default function HomePage() {
               </div>
 
               {/* Stats Grid - Bottom of Hero */}
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 max-w-2xl mx-auto">
                 <div className="text-center backdrop-blur-sm bg-white/5 rounded-lg p-6 border border-white/10">
                   <div className="mb-2 text-4xl font-bold text-white">{projects.length}+</div>
                   <div className="text-sm text-gray-300">{t.stats.projects}</div>
-                </div>
-                <div className="text-center backdrop-blur-sm bg-white/5 rounded-lg p-6 border border-white/10">
-                  <div className="mb-2 text-4xl font-bold text-white">2+</div>
-                  <div className="text-sm text-gray-300">{t.stats.experience}</div>
                 </div>
                 <div className="text-center backdrop-blur-sm bg-white/5 rounded-lg p-6 border border-white/10">
                   <div className="mb-2 text-4xl font-bold text-white">15+</div>
