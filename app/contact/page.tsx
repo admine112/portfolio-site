@@ -307,10 +307,10 @@ export default function ContactPage() {
                     {locale === "de" && "Telefon / Viber / Telegram"}
                   </h3>
                   <a
-                    href="tel:+380674024159"
+                    href="tel:+380956053239"
                     className="text-muted-foreground transition-colors hover:text-foreground"
                   >
-                    +380 67 402 4159
+                    +380956053239
                   </a>
                 </div>
 
