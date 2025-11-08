@@ -3,6 +3,14 @@ import { NextRequest, NextResponse } from 'next/server'
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '7459013983:AAEDMBiXJYu3qf__pWta2mIUdjmyTgwqS-I'
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '944549036'
 
+// Функция для экранирования HTML символов
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -16,17 +24,24 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Экранируем пользовательский ввод
+    const safeName = escapeHtml(name)
+    const safeEmail = escapeHtml(email)
+    const safeProjectType = escapeHtml(projectType || 'Не указан')
+    const safeBudget = escapeHtml(budget || 'Не указан')
+    const safeMessage = escapeHtml(message)
+
     // Формируем сообщение для Telegram
     const telegramMessage = `
 🔔 <b>Новая заявка с сайта!</b>
 
-👤 <b>Имя:</b> ${name}
-📧 <b>Email:</b> ${email}
-📁 <b>Тип проекта:</b> ${projectType || 'Не указан'}
-💰 <b>Бюджет:</b> ${budget || 'Не указан'}
+👤 <b>Имя:</b> ${safeName}
+📧 <b>Email:</b> ${safeEmail}
+📁 <b>Тип проекта:</b> ${safeProjectType}
+💰 <b>Бюджет:</b> ${safeBudget}
 
 💬 <b>Сообщение:</b>
-${message}
+${safeMessage}
 
 ⏰ <b>Время:</b> ${new Date().toLocaleString('uk-UA', { timeZone: 'Europe/Kiev' })}
     `.trim()
