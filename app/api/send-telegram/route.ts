@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
 
     // Формируем сообщение для Telegram
     const telegramMessage = `
-🔔 <b>Новая заявка с сайта!</b>
+🔔 <b>Новая заявка с сайта портфолио!</b>
 
 👤 <b>Имя:</b> ${safeName}
 📧 <b>Email:</b> ${safeEmail}
@@ -44,6 +44,7 @@ export async function POST(request: NextRequest) {
 ${safeMessage}
 
 ⏰ <b>Время:</b> ${new Date().toLocaleString('uk-UA', { timeZone: 'Europe/Kiev' })}
+🌐 <b>Сайт:</b> https://portfolio-site-blush-ten.vercel.app
     `.trim()
 
     // Отправляем в Telegram
