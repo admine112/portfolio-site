@@ -37,9 +37,6 @@ export default function HomePage() {
               {/* Main Hero Content */}
               <div className="mb-16 md:mb-20">
                 <div className="mx-auto max-w-3xl text-center">
-                  <div className="mb-6 inline-block rounded-full bg-primary/20 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm">
-                    {t.hero.greeting}
-                  </div>
 
                   <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-white md:text-6xl">{t.hero.name}</h1>
 
