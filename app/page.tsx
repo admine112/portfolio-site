@@ -81,14 +81,14 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="mb-12 text-center">
               <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-                {locale === "en" && "Featured Projects"}
-                {locale === "uk" && "Обрані проєкти"}
-                {locale === "de" && "Ausgewählte Projekte"}
+                {locale === "en" && "One of the Latest Projects"}
+                {locale === "uk" && "Один з останніх проєктів"}
+                {locale === "de" && "Eines der neuesten Projekte"}
               </h2>
               <p className="text-muted-foreground">
-                {locale === "en" && "Check out some of my recent work"}
-                {locale === "uk" && "Перегляньте деякі з моїх останніх робіт"}
-                {locale === "de" && "Sehen Sie sich einige meiner neuesten Arbeiten an"}
+                {locale === "en" && "Check out our recent work"}
+                {locale === "uk" && "Перегляньте нашу останню роботу"}
+                {locale === "de" && "Sehen Sie sich unsere neueste Arbeit an"}
               </p>
             </div>
 
