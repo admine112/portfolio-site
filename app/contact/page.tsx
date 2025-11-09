@@ -338,23 +338,11 @@ export default function ContactPage() {
                   <div className="space-y-2 text-sm text-muted-foreground">
                     <div className="flex justify-between">
                       <span>
-                        {locale === "en" && "Monday - Friday"}
-                        {locale === "uk" && "Понеділок - П'ятниця"}
-                        {locale === "de" && "Montag - Freitag"}
+                        {locale === "en" && "Monday - Sunday"}
+                        {locale === "uk" && "Понеділок - Неділя"}
+                        {locale === "de" && "Montag - Sonntag"}
                       </span>
-                      <span>9:00 - 18:00</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>
-                        {locale === "en" && "Weekend"}
-                        {locale === "uk" && "Вихідні"}
-                        {locale === "de" && "Wochenende"}
-                      </span>
-                      <span>
-                        {locale === "en" && "By appointment"}
-                        {locale === "uk" && "За домовленістю"}
-                        {locale === "de" && "Nach Vereinbarung"}
-                      </span>
+                      <span>9:00 - 21:00</span>
                     </div>
                   </div>
                 </div>

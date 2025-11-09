@@ -16,16 +16,16 @@ const inter = Inter({ subsets: ["latin", "cyrillic"] })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
-  title: "Artem Fistonkov - Full-Stack Developer",
-  description: "Portfolio of Artem Fistonkov, Full-Stack Developer specializing in modern web applications",
+  title: "Arsen Web - Full-Stack Development Team",
+  description: "Portfolio of Arsen Web, Full-Stack Development team specializing in modern web applications",
   generator: 'v0.app',
   robots: 'index, follow',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://portfolio-site.vercel.app',
-    title: 'Artem Fistonkov - Full-Stack Developer',
-    description: 'Portfolio of Artem Fistonkov, Full-Stack Developer',
+    title: 'Arsen Web - Full-Stack Development Team',
+    description: 'Portfolio of Arsen Web, Full-Stack Development team',
   },
 }
 

@@ -68,11 +68,11 @@ export default function AboutPage() {
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-lg leading-relaxed">
                 {locale === "en" &&
-                  "Hi! I'm Artem Fistonkov, a Full-Stack Developer building modern, responsive websites and web applications. I specialize in creating user-friendly interfaces and robust backend solutions using the latest technologies."}
+                  "Hi! We are Arsen Web, a Full-Stack Development team building modern, responsive websites and web applications. We specialize in creating user-friendly interfaces and robust backend solutions using the latest technologies."}
                 {locale === "uk" &&
-                  "Привіт! Я Артем Фістонков, Full-Stack розробник, який створює сучасні, адаптивні веб-сайти та веб-додатки. Я спеціалізуюсь на створенні зручних інтерфейсів та надійних backend-рішень, використовуючи найновіші технології."}
+                  "Привіт! Ми — Arsen Web, команда Full-Stack розробки, яка створює сучасні, адаптивні веб-сайти та веб-додатки. Ми спеціалізуємось на створенні зручних інтерфейсів та надійних backend-рішень, використовуючи найновіші технології."}
                 {locale === "de" &&
-                  "Hallo! Ich bin Artem Fistonkov, ein Full-Stack-Entwickler, der moderne, responsive Websites und Webanwendungen erstellt. Ich spezialisiere mich auf die Entwicklung benutzerfreundlicher Schnittstellen und robuster Backend-Lösungen mit den neuesten Technologien."}
+                  "Hallo! Wir sind Arsen Web, ein Full-Stack-Entwicklungsteam, das moderne, responsive Websites und Webanwendungen erstellt. Wir spezialisieren uns auf die Entwicklung benutzerfreundlicher Schnittstellen und robuster Backend-Lösungen mit den neuesten Technologien."}
               </p>
               <p className="text-lg leading-relaxed">
                 {locale === "en" &&
