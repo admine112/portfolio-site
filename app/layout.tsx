@@ -16,8 +16,8 @@ const inter = Inter({ subsets: ["latin", "cyrillic"] })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
-  title: "Arsen Web - Студія Full-Stack Розробки",
-  description: "Arsen Web - студія веб-розробки. Створюємо сучасні сайти та веб-додатки",
+  title: "Arsen Dev - Студія Full-Stack Розробки",
+  description: "Arsen Dev — студія веб-розробки. Створюємо сучасні сайти та веб-додатки",
   generator: 'v0.app',
   robots: 'index, follow',
   icons: {
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'uk_UA',
     url: 'https://portfolio-site.vercel.app',
-    title: 'Arsen Web - Студія Full-Stack Розробки',
-    description: 'Arsen Web - студія веб-розробки',
+    title: 'Arsen Dev - Студія Full-Stack Розробки',
+    description: 'Arsen Dev — студія веб-розробки',
   },
 }
 

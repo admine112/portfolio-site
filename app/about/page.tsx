@@ -68,11 +68,11 @@ export default function AboutPage() {
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-lg leading-relaxed">
                 {locale === "en" &&
-                  "Hi! We are Arsen Web, a Full-Stack Development studio building modern, responsive websites and web applications. We specialize in creating user-friendly interfaces and robust backend solutions using the latest technologies."}
+                  "Hi! We are Arsen Dev, a Full-Stack Development studio building modern, responsive websites and web applications. We specialize in creating user-friendly interfaces and robust backend solutions using the latest technologies."}
                 {locale === "uk" &&
-                  "Привіт! Ми — Arsen Web, студія Full-Stack розробки, яка створює сучасні, адаптивні веб-сайти та веб-додатки. Ми спеціалізуємось на створенні зручних інтерфейсів та надійних backend-рішень, використовуючи найновіші технології."}
+                  "Привіт! Ми — Arsen Dev, студія Full-Stack розробки, яка створює сучасні, адаптивні веб-сайти та веб-додатки. Ми спеціалізуємось на створенні зручних інтерфейсів та надійних backend-рішень, використовуючи найновіші технології."}
                 {locale === "de" &&
-                  "Hallo! Wir sind Arsen Web, ein Full-Stack-Entwicklungsstudio, das moderne, responsive Websites und Webanwendungen erstellt. Wir spezialisieren uns auf die Entwicklung benutzerfreundlicher Schnittstellen und robuster Backend-Lösungen mit den neuesten Technologien."}
+                  "Hallo! Wir sind Arsen Dev, ein Full-Stack-Entwicklungsstudio, das moderne, responsive Websites und Webanwendungen erstellt. Wir spezialisieren uns auf die Entwicklung benutzerfreundlicher Schnittstellen und robuster Backend-Lösungen mit den neuesten Technologien."}
               </p>
               <p className="text-lg leading-relaxed">
                 {locale === "en" &&
