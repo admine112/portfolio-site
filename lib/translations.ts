@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       greeting: "We are",
       name: "Arsen Web",
-      title: "Full-Stack Development Team",
+      title: "Full-Stack Development Studio",
       description: "We create modern, responsive websites and web applications using the latest technologies.",
       cta: "View Projects",
       contact: "Get in Touch",
@@ -37,7 +37,7 @@ export const translations = {
     hero: {
       greeting: "Ми —",
       name: "Arsen Web",
-      title: "Команда Full-Stack Розробки",
+      title: "Студія Full-Stack Розробки",
       description: "Ми створюємо сучасні, адаптивні веб-сайти та веб-додатки, використовуючи найновіші технології.",
       cta: "Переглянути проєкти",
       contact: "Зв'язатися",
@@ -62,7 +62,7 @@ export const translations = {
     hero: {
       greeting: "Wir sind",
       name: "Arsen Web",
-      title: "Full-Stack Entwicklungsteam",
+      title: "Full-Stack Entwicklungsstudio",
       description: "Wir erstellen moderne, responsive Websites und Webanwendungen mit den neuesten Technologien.",
       cta: "Projekte ansehen",
       contact: "Kontakt aufnehmen",

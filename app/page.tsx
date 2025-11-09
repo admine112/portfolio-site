@@ -92,8 +92,8 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {projects.slice(0, 3).map((project) => (
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1 max-w-2xl mx-auto">
+              {projects.filter(p => p.id === 'pizzeria').map((project) => (
                 <Link
                   key={project.id}
                   href={`/projects/${project.id}`}

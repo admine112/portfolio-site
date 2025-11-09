@@ -12,146 +12,141 @@ export default function PricingPage() {
 
   const packages = [
     {
-      name: { en: "Landing Page", uk: "Лендінг", de: "Landing-Page" },
-      price: "$40-90",
+      name: { en: "Landing (Start)", uk: "Лендінг (Start)", de: "Landing (Start)" },
+      price: "$30-50",
+      priceUah: "≈ 1 200 – 2 000 грн",
       description: {
-        en: "Perfect for small businesses and personal projects",
-        uk: "Ідеально для малого бізнесу та особистих проєктів",
-        de: "Perfekt für kleine Unternehmen und persönliche Projekte",
+        en: "Perfect for tutors, craftsmen, startups and personal projects",
+        uk: "Ідеально для репетиторів, майстрів, стартапів та особистих проєктів",
+        de: "Perfekt für Tutoren, Handwerker, Startups und persönliche Projekte",
       },
       features: {
         en: [
-          "One-page design",
-          "Responsive layout",
-          "Contact form",
-          "Basic SEO",
-          "1-3 days development",
+          "One page",
+          "Responsive design (mobile/tablets)",
+          "Request form (directly to Telegram or email)",
+          "Upload to free hosting (Netlify, Vercel)",
           "2 revisions included",
+          "Deadline: 2-3 days",
         ],
         uk: [
-          "Одностороінковий дизайн",
-          "Адаптивна верстка",
-          "Форма зв'язку",
-          "Базове SEO",
-          "Срок розробки 1-3 дні",
+          "Одна сторінка",
+          "Адаптивний дизайн (мобільні/планшети)",
+          "Форма заявки (напрямую в Telegram або на email)",
+          "Завантаження сайту на хостинг (безкоштовний: Netlify, Vercel)",
           "2 правки включено",
+          "Термін: 2–3 дні",
         ],
         de: [
-          "Einseitiges Design",
-          "Responsives Layout",
-          "Kontaktformular",
-          "Basis-SEO",
-          "1-3 Tage Entwicklung",
+          "Eine Seite",
+          "Responsives Design (Mobil/Tablets)",
+          "Anfrageformular (direkt an Telegram oder E-Mail)",
+          "Upload auf kostenloses Hosting (Netlify, Vercel)",
           "2 Überarbeitungen inklusive",
+          "Frist: 2-3 Tage",
         ],
+      },
+      note: {
+        en: "Perfect for quickly launching an online presence without extra costs.",
+        uk: "Підходить, щоб швидко запустити онлайн-присутність без зайвих витрат.",
+        de: "Ideal, um schnell eine Online-Präsenz ohne zusätzliche Kosten zu starten.",
       },
     },
     {
-      name: { en: "Multi-Page Website", uk: "Багатосторінковий сайт", de: "Mehrseitige Website" },
-      price: "$60-100",
+      name: { en: "Business Card Site (Popular)", uk: "Сайт-візитка (Popular)", de: "Visitenkarten-Website (Popular)" },
+      price: "$50-80",
+      priceUah: "≈ 2 000 – 3 200 грн",
       description: {
-        en: "Ideal for businesses needing multiple pages",
-        uk: "Ідеально для бізнесу, що потребує кілька сторінок",
-        de: "Ideal für Unternehmen mit mehreren Seiten",
+        en: "For small businesses that want to look professional",
+        uk: "Для малого бізнесу, який хоче виглядати професійно",
+        de: "Für kleine Unternehmen, die professionell aussehen möchten",
       },
       features: {
         en: [
-          "Up to 5 pages",
-          "Responsive design",
-          "Contact forms",
-          "Advanced SEO",
-          "2-4 days development",
+          "Up to 4 pages (Home, About, Services, Contacts)",
+          "Unified style and navigation",
+          "2 contact forms (e.g., 'Order a call' + 'Write to Telegram')",
           "3 revisions included",
-          "Basic integrations",
+          "Deadline: 3-5 days",
         ],
         uk: [
-          "До 5 сторінок",
-          "Адаптивний дизайн",
-          "Форми зв'язку",
-          "Просунуте SEO",
-          "Срок розробки 2-4 дні",
+          "До 4 сторінок (Головна, Про мене, Послуги, Контакти)",
+          "Єдиний стиль та навігація",
+          "2 форми зв'язку (напр., «Замовити дзвінок» + «Написати в Telegram»)",
           "3 правки включено",
-          "Базові інтеграції",
+          "Термін: 3–5 днів",
         ],
         de: [
-          "Bis zu 5 Seiten",
-          "Responsives Design",
-          "Kontaktformulare",
-          "Erweitertes SEO",
-          "2-4 Tage Entwicklung",
+          "Bis zu 4 Seiten (Startseite, Über uns, Dienstleistungen, Kontakte)",
+          "Einheitlicher Stil und Navigation",
+          "2 Kontaktformulare (z.B. 'Rückruf bestellen' + 'An Telegram schreiben')",
           "3 Überarbeitungen inklusive",
-          "Basis-Integrationen",
+          "Frist: 3-5 Tage",
         ],
+      },
+      note: {
+        en: "Perfect for coffee shops, tutors, craftsmen, handmade shops.",
+        uk: "Ідеально для кав'ярень, репетиторів, майстрів, магазинів handmade.",
+        de: "Ideal für Cafés, Tutoren, Handwerker, Handmade-Shops.",
       },
       popular: true,
     },
     {
-      name: { en: "Web Application", uk: "Веб-додаток", de: "Webanwendung" },
-      price: "$80-200",
+      name: { en: "Extended Site (Pro)", uk: "Розширений сайт (Pro)", de: "Erweiterte Website (Pro)" },
+      price: "$80-120",
+      priceUah: "≈ 3 200 – 4 800 грн",
       description: {
-        en: "Complex applications with custom functionality",
-        uk: "Складні додатки з кастомним функціоналом",
-        de: "Komplexe Anwendungen mit individueller Funktionalität",
+        en: "When you need more features, but without complex backend",
+        uk: "Коли потрібно більше функцій, але без складного бекенду",
+        de: "Wenn Sie mehr Funktionen benötigen, aber ohne komplexes Backend",
       },
       features: {
         en: [
-          "Custom features",
-          "Database integration",
-          "User authentication",
-          "Admin panel",
-          "3-7 days development",
+          "Up to 6 pages",
+          "Custom functionality: price calculator, schedule, work gallery",
+          "Telegram Bot integration (client receives requests in Telegram)",
           "5 revisions included",
-          "Advanced integrations",
-          "Integration with various APIs",
+          "Deadline: 5-7 days",
         ],
         uk: [
-          "Кастомні функції",
-          "Інтеграція з БД",
-          "Аутентифікація",
-          "Адмін-панель",
-          "Срок розробки 3-7 днів",
+          "До 6 сторінок",
+          "Кастомний функціонал: калькулятор цін, розклад, галерея робіт",
+          "Інтеграція з Telegram Bot (клієнт отримує заявки у Telegram)",
           "5 правок включено",
-          "Просунуті інтеграції",
-          "Інтеграція з різними API",
+          "Термін: 5–7 днів",
         ],
         de: [
-          "Individuelle Funktionen",
-          "Datenbankintegration",
-          "Benutzerauthentifizierung",
-          "Admin-Panel",
-          "3-7 Tage Entwicklung",
+          "Bis zu 6 Seiten",
+          "Benutzerdefinierte Funktionen: Preisrechner, Zeitplan, Arbeitsgalerie",
+          "Telegram Bot Integration (Kunde erhält Anfragen in Telegram)",
           "5 Überarbeitungen inklusive",
-          "Erweiterte Integrationen",
-          "Integration mit verschiedenen APIs",
+          "Frist: 5-7 Tage",
         ],
+      },
+      note: {
+        en: "For serious tutors, dance studios, mini-courses, photo studios.",
+        uk: "Для серйозних репетиторів, танцювальних студій, міні-курсів, фотостудій.",
+        de: "Für ernsthafte Tutoren, Tanzstudios, Mini-Kurse, Fotostudios.",
       },
     },
   ]
 
   const additionalFeatures = [
     {
-      name: { en: "Multilingual Support", uk: "Багатомовність", de: "Mehrsprachige Unterstützung" },
-      price: "+$10-20",
+      name: { en: "Multilingual", uk: "Багатомовність", de: "Mehrsprachigkeit" },
+      price: "+ $15",
     },
     {
-      name: { en: "E-commerce Functionality", uk: "Функціонал інтернет-магазину", de: "E-Commerce-Funktionalität" },
-      price: "+$25-50",
+      name: { en: "Online Store (up to 20 products)", uk: "Інтернет-магазин (до 20 товарів)", de: "Online-Shop (bis zu 20 Produkte)" },
+      price: "+ $40",
     },
     {
-      name: { en: "Telegram Bot for Requests", uk: "Telegram Bot для прийому заявок", de: "Telegram-Bot für Anfragen" },
-      price: "+$10-20",
+      name: { en: "Custom Animations", uk: "Кастомні анімації", de: "Benutzerdefinierte Animationen" },
+      price: "+ $10–20",
     },
     {
-      name: { en: "Payment Gateway", uk: "Платіжний шлюз", de: "Zahlungsgateway" },
-      price: "+$20-40",
-    },
-    {
-      name: { en: "Custom Animations", uk: "Кастомні анімації", de: "Individuelle Animationen" },
-      price: "+$10-30",
-    },
-    {
-      name: { en: "Advanced SEO", uk: "Просунуте SEO", de: "Erweitertes SEO" },
-      price: "+$20-40",
+      name: { en: "And much more", uk: "та багато іншого", de: "und vieles mehr" },
+      price: "",
     },
   ]
 
@@ -195,10 +190,11 @@ export default function PricingPage() {
                 )}
 
                 <h3 className="mb-2 text-2xl font-bold">{pkg.name[locale]}</h3>
-                <div className="mb-4 text-4xl font-bold text-primary">{pkg.price}</div>
+                <div className="mb-1 text-3xl font-bold text-primary">{pkg.price}</div>
+                <div className="mb-4 text-sm text-muted-foreground">{pkg.priceUah}</div>
                 <p className="mb-6 text-sm text-muted-foreground">{pkg.description[locale]}</p>
 
-                <ul className="mb-8 flex-1 space-y-3">
+                <ul className="mb-4 flex-1 space-y-3">
                   {pkg.features[locale].map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
                       <div className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/10">
@@ -209,11 +205,17 @@ export default function PricingPage() {
                   ))}
                 </ul>
 
+                {pkg.note && (
+                  <div className="mb-6 rounded-lg bg-muted p-3">
+                    <p className="text-xs text-muted-foreground">💡 {pkg.note[locale]}</p>
+                  </div>
+                )}
+
                 <Button asChild className="w-full" size="lg" variant={pkg.popular ? "default" : "outline"}>
                   <Link href="/contact">
-                    {locale === "en" && "Get Started"}
-                    {locale === "uk" && "Почати"}
-                    {locale === "de" && "Loslegen"}
+                    {locale === "en" && "Choose"}
+                    {locale === "uk" && "Вибрати"}
+                    {locale === "de" && "Wählen"}
                   </Link>
                 </Button>
               </div>
@@ -238,7 +240,7 @@ export default function PricingPage() {
                     className="flex items-center justify-between rounded-lg border border-border bg-card p-4"
                   >
                     <span className="font-medium">{feature.name[locale]}</span>
-                    <span className="text-primary">{feature.price}</span>
+                    {feature.price && <span className="text-primary">{feature.price}</span>}
                   </div>
                 ))}
               </div>

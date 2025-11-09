@@ -16,16 +16,19 @@ const inter = Inter({ subsets: ["latin", "cyrillic"] })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
-  title: "Arsen Web - Full-Stack Development Team",
-  description: "Portfolio of Arsen Web, Full-Stack Development team specializing in modern web applications",
+  title: "Arsen Web - Студія Full-Stack Розробки",
+  description: "Arsen Web - студія веб-розробки. Створюємо сучасні сайти та веб-додатки",
   generator: 'v0.app',
   robots: 'index, follow',
+  icons: {
+    icon: '/favicon.svg?v=2',
+  },
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'uk_UA',
     url: 'https://portfolio-site.vercel.app',
-    title: 'Arsen Web - Full-Stack Development Team',
-    description: 'Portfolio of Arsen Web, Full-Stack Development team',
+    title: 'Arsen Web - Студія Full-Stack Розробки',
+    description: 'Arsen Web - студія веб-розробки',
   },
 }
 
