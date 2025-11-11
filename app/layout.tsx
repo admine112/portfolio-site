@@ -47,6 +47,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <meta name="google-site-verification" content="QudVGkhbGZSEjtbJ0AT8sSFJMQeZSHqIEBiHz1Ly2Ro" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
