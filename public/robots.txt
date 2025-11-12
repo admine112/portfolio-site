@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://portfolio-site-blush-ten.vercel.app/sitemap.xml
-Sitemap: https://portfolio-site-blush-ten.vercel.app/sitemap.xml
