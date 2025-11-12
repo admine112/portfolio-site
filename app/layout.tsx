@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ["latin", "cyrillic"] })
 export const metadata: Metadata = {
   title: 'Arsen Dev — Full-Stack Studio | Сайти від 500 грн',
   description: 'Розробляю сучасні сайти для репетиторів, майстрів, малого бізнесу. React, Next.js, TypeScript.',
-  keywords: 'сайт від 500 грн, веб розробка україна, arsen dev, full-stack studio',
+  keywords: 'сайт від 500 грн, веб розробка україна, arsen dev, full-stack studio, лендінг, фронтенд розробник',
   generator: 'v0.app',
   robots: 'index, follow',
   icons: {
