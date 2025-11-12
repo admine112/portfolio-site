@@ -32,5 +32,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.6,
     },
-  ]
+  ].map(item => ({
+    ...item,
+    // Гарантуємо, що ніде немає зайвих пробілів
+    url: item.url.trim(),
+  }))
 }
