@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ["latin", "cyrillic"] })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://portfolio-site-blush-ten.vercel.app'),
+  metadataBase: new URL('https://portfolio-site-blush-ten.vercel.app/'),
   title: {
     default: 'Arsen Dev — Студія розробки сайтів | Сайти від 500 грн',
     template: '%s | Arsen Dev'
