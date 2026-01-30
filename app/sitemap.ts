@@ -1,40 +1,52 @@
 import { MetadataRoute } from 'next'
+import { projects } from '@/lib/projects-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const baseUrl = 'https://portfolio-site-blush-ten.vercel.app'
+
+  const projectUrls = projects.map((project) => ({
+    url: `${baseUrl}/projects/${project.id}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+
+  const staticUrls = [
     {
-      url: 'https://portfolio-site-blush-ten.vercel.app',
+      url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
+      changeFrequency: 'daily' as const,
       priority: 1,
     },
     {
-      url: 'https://portfolio-site-blush-ten.vercel.app/projects',
+      url: `${baseUrl}/projects`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: 'https://portfolio-site-blush-ten.vercel.app/about',
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
     {
-      url: 'https://portfolio-site-blush-ten.vercel.app/contact',
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
-      priority: 0.6,
+      priority: 0.8,
     },
     {
-      url: 'https://portfolio-site-blush-ten.vercel.app/pricing',
+      url: `${baseUrl}/pricing`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
-      priority: 0.6,
+      priority: 0.8,
     },
-  ].map(item => ({
+  ]
+
+  return [...staticUrls, ...projectUrls].map(item => ({
     ...item,
-    // Гарантуємо, що ніде немає зайвих пробілів
     url: item.url.trim(),
   }))
 }
+
