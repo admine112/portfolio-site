@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next'
 import { projects } from '@/lib/projects-data'
 
+export const revalidate = 0 // force dynamic generation
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://arsen-dev.vercel.app'
 
