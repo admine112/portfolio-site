@@ -11,33 +11,34 @@ export default function AboutPage() {
 
   const skills = [
     {
-      category: { en: "Frontend", uk: "Frontend", de: "Frontend" },
+      category: { en: "Frontend Stack", uk: "Технологічний стек", de: "Technologiestack" },
       icon: Palette,
-      items: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5", "CSS3"],
-    },
-    {
-      category: { en: "Backend", uk: "Backend", de: "Backend" },
-      icon: Database,
-      items: ["Node.js", "API Development", "Supabase", "Neon", "PostgreSQL"],
-    },
-    {
-      category: { en: "Tools & Platforms", uk: "Інструменти та платформи", de: "Tools & Plattformen" },
-      icon: Code2,
-      items: ["Git", "GitHub", "Vercel", "Tilda", "Formspree", "VS Code"],
-    },
-    {
-      category: { en: "Design & UX", uk: "Дизайн та UX", de: "Design & UX" },
-      icon: Smartphone,
       items: [
-        locale === "en" ? "Responsive Design" : locale === "uk" ? "Адаптивний дизайн" : "Responsives Design",
-        locale === "en" ? "Mobile-First" : locale === "uk" ? "Mobile-First" : "Mobile-First",
-        locale === "en" ? "UI/UX Principles" : locale === "uk" ? "Принципи UI/UX" : "UI/UX-Prinzipien",
+        "React + Next.js (App Router + Server Components)",
+        locale === "uk" ? "TypeScript — повна типізація" : "TypeScript — full typing",
+        "Tailwind CSS + shadcn/ui",
+        "Vite — fast iterations",
+        "Zustand / TanStack Query",
       ],
     },
     {
-      category: { en: "Integrations", uk: "Інтеграції", de: "Integrationen" },
+      category: { en: "Specialized Solutions", uk: "Спеціалізовані рішення", de: "Spezialisierte Lösungen" },
       icon: Zap,
-      items: ["Telegram API", "Forms", "Analytics"],
+      items: [
+        locale === "uk" ? "Кастомні адмін-панелі" : "Custom admin panels",
+        locale === "uk" ? "Telegram-інтеграції для лідів" : "Telegram integrations for leads",
+        locale === "uk" ? "Омніканальне захоплення" : "Omnichannel capture",
+      ],
+    },
+    {
+      category: { en: "Backend & Database", uk: "Backend та бази даних", de: "Backend & Datenbank" },
+      icon: Database,
+      items: ["Node.js", "Supabase", "Neon", "PostgreSQL", "API Development"],
+    },
+    {
+      category: { en: "Tools & Deployment", uk: "Інструменти та деплой", de: "Tools & Deployment" },
+      icon: Code2,
+      items: ["Git", "GitHub", "Vercel", "Netlify", "PostCSS"],
     },
   ]
 

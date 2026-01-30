@@ -17,7 +17,7 @@ export default function HomePage() {
 
       <main className="flex-1">
         {/* Combined Hero + Stats Section */}
-        <section 
+        <section
           className="relative min-h-screen flex items-center overflow-hidden"
           style={{
             backgroundImage: 'url(/code-background.jpg)',
@@ -142,14 +142,14 @@ export default function HomePage() {
                 <Code2 className="h-8 w-8 text-primary" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">
-                {locale === "en" && "Modern Technologies"}
-                {locale === "uk" && "Сучасні технології"}
-                {locale === "de" && "Moderne Technologien"}
+                {locale === "en" && "Modern Stack"}
+                {locale === "uk" && "Технологічний стек"}
+                {locale === "de" && "Technologiestack"}
               </h3>
-              <p className="text-muted-foreground">
-                {locale === "en" && "React, Next.js, TypeScript, Tailwind CSS"}
-                {locale === "uk" && "React, Next.js, TypeScript, Tailwind CSS"}
-                {locale === "de" && "React, Next.js, TypeScript, Tailwind CSS"}
+              <p className="text-muted-foreground whitespace-pre-line">
+                {locale === "en" && "Next.js, TypeScript, Tailwind CSS, shadcn/ui"}
+                {locale === "uk" && "Next.js, TypeScript, Tailwind CSS, shadcn/ui"}
+                {locale === "de" && "Next.js, TypeScript, Tailwind CSS, shadcn/ui"}
               </p>
             </div>
 
@@ -158,14 +158,14 @@ export default function HomePage() {
                 <Palette className="h-8 w-8 text-primary" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">
-                {locale === "en" && "Responsive Design"}
-                {locale === "uk" && "Адаптивний дизайн"}
-                {locale === "de" && "Responsives Design"}
+                {locale === "en" && "Premium Design"}
+                {locale === "uk" && "Преміум дизайн"}
+                {locale === "de" && "Premium Design"}
               </h3>
               <p className="text-muted-foreground">
-                {locale === "en" && "Mobile-first approach for all devices"}
-                {locale === "uk" && "Mobile-first підхід для всіх пристроїв"}
-                {locale === "de" && "Mobile-First-Ansatz für alle Geräte"}
+                {locale === "en" && "Modern UI/UX with high attention to detail"}
+                {locale === "uk" && "Сучасний UI/UX та преміальна естетика"}
+                {locale === "de" && "Modernes UI/UX mit Liebe zum Detail"}
               </p>
             </div>
 
@@ -174,14 +174,14 @@ export default function HomePage() {
                 <Zap className="h-8 w-8 text-primary" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">
-                {locale === "en" && "Fast Delivery"}
-                {locale === "uk" && "Швидка доставка"}
-                {locale === "de" && "Schnelle Lieferung"}
+                {locale === "en" && "Business-Focused"}
+                {locale === "uk" && "Орієнтація на бізнес"}
+                {locale === "de" && "Business-fokussiert"}
               </h3>
               <p className="text-muted-foreground">
-                {locale === "en" && "Quick turnaround with efficient development"}
-                {locale === "uk" && "Швидка розробка з ефективним підходом"}
-                {locale === "de" && "Schnelle Entwicklung mit effizienter Arbeitsweise"}
+                {locale === "en" && "CRM, Telegram integrations, and custom dashboards"}
+                {locale === "uk" && "CRM, Telegram інтеграції та адмін-панелі"}
+                {locale === "de" && "CRM, Telegram-Integrationen und Dashboards"}
               </p>
             </div>
           </div>
