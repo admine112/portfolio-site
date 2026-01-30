@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ["latin", "cyrillic"] })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://portfolio-site-blush-ten.vercel.app/'),
+  metadataBase: new URL('https://arsen-dev.vercel.app/'),
   title: {
     default: 'Arsen Dev — Студія розробки сайтів | Сайти від 500 грн',
     template: '%s | Arsen Dev'
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'uk_UA',
-    url: 'https://portfolio-site-blush-ten.vercel.app',
+    url: 'https://arsen-dev.vercel.app',
     title: 'Arsen Dev — Студія розробки сайтів | Сайти від 500 грн',
     description: 'Професійна розробка сучасних сайтів. Лендінги, візитки, магазини. Сучасний стек: React, Next.js, TS.',
     siteName: 'Arsen Dev Portfolio',
@@ -94,9 +94,9 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: 'Arsen Dev',
-  image: 'https://portfolio-site-blush-ten.vercel.app/image.png',
-  '@id': 'https://portfolio-site-blush-ten.vercel.app',
-  url: 'https://portfolio-site-blush-ten.vercel.app',
+  image: 'https://arsen-dev.vercel.app/image.png',
+  '@id': 'https://arsen-dev.vercel.app',
+  url: 'https://arsen-dev.vercel.app',
   telephone: '+380956053239',
   address: {
     '@type': 'PostalAddress',
