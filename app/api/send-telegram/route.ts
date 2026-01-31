@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
 ${safeMessage}
 
 ⏰ <b>Время:</b> ${new Date().toLocaleString('uk-UA', { timeZone: 'Europe/Kiev' })}
-🌐 <b>Сайт:</b> https://portfolio-site-blush-ten.vercel.app
+🌐 <b>Сайт:</b> https://arsen-dev.vercel.app
     `.trim()
 
     // Отправляем в Telegram
