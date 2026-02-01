@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import ContactClient from "./contact-client"
+import ContactClient from "@/app/contact/contact-client"
 
 export const metadata: Metadata = {
   title: 'Контакти | Замовити розробку сайту',

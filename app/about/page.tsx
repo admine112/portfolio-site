@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import AboutClient from "./about-client"
+import AboutClient from "@/app/about/about-client"
 
 export const metadata: Metadata = {
   title: 'Про мене | Студія розробки Arsen Dev',

@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import PricingClient from "./pricing-client"
+import PricingClient from "@/app/pricing/pricing-client"
 
 export const metadata: Metadata = {
   title: 'Ціни на розробку сайтів',

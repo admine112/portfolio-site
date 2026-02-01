@@ -1,15 +1,14 @@
-import { use } from "react"
 import { projects } from "@/lib/projects-data"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
-import ProjectClient from "./project-client"
+import ProjectClient from "@/app/projects/[id]/project-client"
 
 type Props = {
   params: Promise<{ id: string }>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const id = (await params).id
+  const { id } = await params
   const project = projects.find((p) => p.id === id)
 
   if (!project) return {}
@@ -25,11 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function ProjectDetailPage({ params }: Props) {
-  const resolvedParams = use(params)
-  const projectId = resolvedParams.id
-
-  const project = projects.find((p) => p.id === projectId)
+export default async function ProjectDetailPage({ params }: Props) {
+  const { id } = await params
+  const project = projects.find((p) => p.id === id)
 
   if (!project) {
     return notFound()
@@ -37,3 +34,4 @@ export default function ProjectDetailPage({ params }: Props) {
 
   return <ProjectClient project={project} />
 }
+

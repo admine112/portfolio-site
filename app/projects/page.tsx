@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import ProjectsClient from "./projects-client"
+import ProjectsClient from "@/app/projects/projects-client"
 
 export const metadata: Metadata = {
   title: 'Портфоліо проєктів | Приклади розроблених сайтів',

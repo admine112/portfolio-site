@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import HomeClient from "./home-client"
+import HomeClient from "@/app/home-client"
 
 export const metadata: Metadata = {
   title: 'Arsen Dev — Розробка сайтів під ключ | Сайти від 500 грн',
