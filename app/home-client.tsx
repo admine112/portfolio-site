@@ -21,7 +21,7 @@ export default function HomeClient() {
                     <div className="container relative z-10 mx-auto px-4">
                         <div className="mx-auto max-w-3xl text-center">
                             <h1 className="mb-6 text-4xl font-bold tracking-tight md:text-6xl">
-                                {t.hero.greeting} <span className="text-primary">{t.hero.name}</span>
+                                {t.hero.greeting} <span className="text-primary">{t.hero.name} (v2.0)</span>
                                 <br />
                                 {t.hero.title}
                             </h1>
