@@ -18,10 +18,20 @@ export default function HomeClient() {
             <main className="flex-1">
                 {/* Hero Section */}
                 <section className="relative overflow-hidden bg-background py-20 md:py-32">
+                    {/* Background image */}
+                    <div className="absolute inset-0 -z-20 opacity-30">
+                        <img
+                            src="/code-background.jpg"
+                            alt="Background"
+                            className="h-full w-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
+                    </div>
+
                     <div className="container relative z-10 mx-auto px-4">
                         <div className="mx-auto max-w-3xl text-center">
                             <h1 className="mb-6 text-4xl font-bold tracking-tight md:text-6xl">
-                                {t.hero.greeting} <span className="text-primary">{t.hero.name} (v2.0)</span>
+                                {t.hero.greeting} <span className="text-primary">{t.hero.name}</span>
                                 <br />
                                 {t.hero.title}
                             </h1>
