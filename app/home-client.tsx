@@ -19,7 +19,7 @@ export default function HomeClient() {
                 {/* Hero Section */}
                 <section className="relative overflow-hidden bg-background py-20 md:py-32">
                     {/* Background image */}
-                    <div className="absolute inset-0 -z-20 opacity-30">
+                    <div className="absolute inset-0 z-0 opacity-30 pointer-events-none">
                         <img
                             src="/code-background.jpg"
                             alt="Background"
@@ -53,7 +53,7 @@ export default function HomeClient() {
                     </div>
 
                     {/* Background decoration */}
-                    <div className="absolute top-1/2 left-1/2 -z-10 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-[120px]" />
+                    <div className="absolute top-1/2 left-1/2 z-0 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-[120px]" />
                 </section>
 
                 {/* Featured Projects */}
